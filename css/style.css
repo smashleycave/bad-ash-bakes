@@ -1,0 +1,40 @@
+
+header {
+    background-color: #fe5f55;
+    color: #004e98 ;
+    font-weight: bold;
+    font-family: monospace;  
+    font-size: xx-large;
+}
+
+body{
+
+    text-align: center;
+}
+
+table{
+
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+
+
+  
+
+/*Size and price table*/
+
+}
+tr:nth-child(even) {
+    background: #b8d8d8;
+}
+.container{
+
+    display:flex;
+
+
+}
+
+
+

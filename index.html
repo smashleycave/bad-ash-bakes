@@ -5,8 +5,7 @@
    <!--Normalize CSS-->
    <link rel="stylesheet" href="css/normalize.css">
 
-    <!--Link to Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
 
     <!-- Link to  Custom CSS file-->
     <link rel="stylesheet" href="css/style.css">
@@ -31,15 +30,42 @@
   </header>
 
   <body>
+
+    <!--  CAROUSEL ATTEMPT-->
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <img src="img/sprinkle_cookies.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <img src="img/boxed macarons.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <img src="img/boxed pastries.jpeg" style="width:100%">
+      </div>
+      
+      <a class="prev round" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next round" onclick="plusSlides(1)">&#10095;</a>
+
+      
+      </div>
+      
+      
+     
+
+    <!--BEGIN TEXT-->
     
-          <h2>About Bad Ash</h2>
+          <h1 class="sectionheader">About Bad Ash</h1>
 
             <p>Hi I'm Ashley</p>
             <p>My baking career began when I got my first Easy Bake Oven. I mean how can a 
              girl resist churning out cookies, cakes, brownies with the help of a 65 watt lightbulb? As I got older, baking became my
               favorite past time. Working in IT, I became an avid stress baker. When life is tough, the tough get baking!!</p>
           
-          <h2> About Our Subscription Service</h2>
+          <h1 class="sectionheader"> About Our Subscription Service</h1>
 
         <p>Bad Ash Bakes is Louisville's finest subscription box for baked goods! 
          Pick the size and frequency you would like to recieve your baked goods and we will take care of the the rest!</p>
@@ -47,9 +73,10 @@
       
 
 
-<!-- Pricing Table-->      
-    <table>
-        <thead>Sizing and Prices</thead>
+<!-- Pricing Table-->  
+  <div>
+        <thead class="sectionheader">Sizing and Prices</thead>
+        <table>
         <tr>
           <th>Size</th>
           <th>Size Description</th>
@@ -76,9 +103,12 @@
           <td>69.99</td>
         </tr>
       </table>
+
+    </div>
       
-    <h2>Subscribe!!</h2>
-     <form>
+    <h1 class="sectionheader">Subscribe!!</h1>
+
+    
          <p>
             <label for="name">Name</label>
             <input type="name" id="name" name="user_name">
@@ -117,10 +147,6 @@
     <!--main.js-->
      <script src="main.js"></script>
 
-    <!-- Optional JavaScript Bootstrap -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
   </body>
 </html>

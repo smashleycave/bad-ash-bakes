@@ -35,63 +35,9 @@
     display: none;
   }
 
+   /*CAROUSEL/
 
-
-body{
-
-    background-color: #E4FDE1;
-}
-
-table{
-
-    text-align: center;
-}
-
-.sectionheader{
-    font-size: 3em;
-    font-family: monospace;
-    color: #114B5F;
-}
-
-/*Size and price table*/
-
-tr:nth-child(even) {
-    background: #b8d8d8;
-}
-
-
-/*Media Queries*/
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-
-
-
-  /*carousel PRACTICE*/
-
-  /* Slideshow container */
+  /* Carousel container */
 .slideshow-container {
     max-width: 100%;
     max-height: 15 px;
@@ -107,13 +53,13 @@ tr:nth-child(even) {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
-    font-weight: bold;ß
-    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
   /* Align the "next button" to the right */
   .next {
@@ -121,10 +67,97 @@ tr:nth-child(even) {
     border-radius: 3px 0 0 3px;
   }
   
-  /* hover, add a black background color*/
+  /* hover, add a coral background color*/
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color:#F45B69;
   }
+
+
+
+body{
+
+    background-color: #E4FDE1;
+}
+
+table{
+
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+    font-family:monospace;
+    font-size: 5em;
+    color:#F45B69;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+
+.sectionheader{
+    font-size: 3em;
+    font-family: monospace;
+    color: #114B5F;
+}
+
+/*Size and price table*/
+
+tr:nth-child(even) {
+    background: #b8d8d8;
+}
+
+th{
+    font-size:1.5em;
+}
+
+.tablepad{
+    padding-right: 1em;
+}
+
+
  
+
+/*MEDIA QUERIES*/
+
+/*Bootstrap Queries*/
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+/* For Navbar*/
+/* When the screen is less than 600 pixels wide, hide all links Except Bad Ash Bakes */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class added to topnav with JavaScript when icon is clicked.*/
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
 

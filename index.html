@@ -4,10 +4,11 @@
 
    <!--Normalize CSS-->
    <link rel="stylesheet" href="css/normalize.css">
+  
+   <!--Bootstrap CSS-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    
-
-    <!-- Link to  Custom CSS file-->
+  <!-- Link to  Custom CSS file-->
     <link rel="stylesheet" href="css/style.css">
 
       <title>Bad Ash Bakes</title>
@@ -19,11 +20,11 @@
 
 <div class="topnav" id="myTopnav">
   <a class="active">Bad Ash Bakes</a>
-  <a href="home">About Bad Ash</a>
-  <a href="#news">Pricing</a>
-  <a href="#contact">About Subscription Services</a>
-  <a href="#about">Subscribe</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="#aboutbadash">About Bad Ash</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#aboutservice">About Subscription Services</a>
+  <a href="#subscribe">Subscribe</a>
+  <a class="icon" onclick="thisFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
@@ -50,6 +51,10 @@
       <a class="prev round" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next round" onclick="plusSlides(1)">&#10095;</a>
 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+
       
       </div>
       
@@ -57,29 +62,49 @@
      
 
     <!--BEGIN TEXT-->
+
+    <h1> Louisville's Finest Baked Goods Subscription Service</h1>
+
+    <!--Beginning of About container (Bootstrap Grid)-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2 class="sectionheader mt-4 text-center">About Bad Ash</h2>
+
+          <img class="mt-4 mb-4 img-fluid rounded" src="img/ashley.jpeg" alt="image of owner in front of grafitti wall">
+
+        <p class="text-center">Hi I'm Ashley!!!</p>
+        <p>My baking career began when I got my first Easy Bake Oven. How can a 
+          girl resist churning out cookies, cakes, brownies with the help of a 65 watt lightbulb? </p>
+        <p>As I got older, baking became my favorite past time. While working in IT, I became an avid stress baker. When life is tough, the tough get baking!! 
+          Soon, I was making so may pastries that i began began to share my bakes with my friends and family. Everyone loved them and 
+          swore that I could make a living doing something that I loved. So decided to turn my passion into a business!</p>
+        </div>
+        <div class="col-sm">
+
+          <h2 class="sectionheader mt-4 text-center">Subscription Services</h2>
+
+          <img class="img-fluid rounded mt-4 mb-4" src="img/hands holding bread.jpeg" alt="image of hands holding bread">
+
+          <p class="mt-4">Bad Ash Bakes is Louisville's finest subscription box for baked goods! 
+          Pick the size and frequency you would like to recieve your baked goods and we will take care of the the rest!</p>
+          <p>Baked good selections will change weekly. Have a dietary restriction? We can accomodate them!</p>
+
+        </div>
+      </div>
+    </div><!--End of About container-->
     
-          <h1 class="sectionheader">About Bad Ash</h1>
-
-            <p>Hi I'm Ashley</p>
-            <p>My baking career began when I got my first Easy Bake Oven. I mean how can a 
-             girl resist churning out cookies, cakes, brownies with the help of a 65 watt lightbulb? As I got older, baking became my
-              favorite past time. Working in IT, I became an avid stress baker. When life is tough, the tough get baking!!</p>
-          
-          <h1 class="sectionheader"> About Our Subscription Service</h1>
-
-        <p>Bad Ash Bakes is Louisville's finest subscription box for baked goods! 
-         Pick the size and frequency you would like to recieve your baked goods and we will take care of the the rest!</p>
-         <p>Baked good selections will change weekly. Have a dietary restriction? We can accomodate them!</p>
-      
 
 
 <!-- Pricing Table-->  
-  <div>
-        <thead class="sectionheader">Sizing and Prices</thead>
-        <table>
+<div class="container align-middle">
+  <div class="row">
+    <div class="col-md mt-4">
+      <table>
+        <h2 class="sectionheader">Sizing and Prices</h2>
         <tr>
           <th>Size</th>
-          <th>Size Description</th>
+          <th class="tablepad">Size Description</th>
           <th>Price</th>
         </tr>
         <tr>
@@ -103,50 +128,63 @@
           <td>69.99</td>
         </tr>
       </table>
-
     </div>
-      
-    <h1 class="sectionheader">Subscribe!!</h1>
+    <div class="col-sm">
+      <img class="img-fluid rounded-circle" src="img/sprinkledonuts.jpeg" alt="picture of donuts with rainbow sprinkles">
+    </div>
+  </div>
+</div>
 
+ 
+<!-- Subcription Form-->
+
+<form class="ser" onsubmit="myFunction()">
+    <h2 class="sectionheader">Subscribe!!</h2>
+
+        <p>Want to get your own Bad Ash Bakes? Fill out the form below. We will get in touch to add you to our subscription 
+          services and discuss any dietary needs.</p>
     
-         <p>
+         <div>
             <label for="name">Name</label>
-            <input type="name" id="name" name="user_name">
+            <input type="name" id="name" name="user_name" required>
          </div>
 
          <div>
             <label for="email">Email:</label>
-            <input type="email" id=mail name="user_email">
-         </p>
+            <input type="email" id=mail name="user_email" required>
+         </div>
 
-        <p>
+        <div>
             <label for="box">Box Size</label>
-            <select id="box" name="box_size">
+            <select id="box" name="box_size" required>
+                <option></option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
                 <option value="Family">Family</option>  
             </select>
-        </p>
+          </div>
 
-        <p>
+        <div>
             <label for="frequency">Delivery Frequency</label>
-            <select id="frequency" name="delivery_frequency">
+            <select id="frequency" name="delivery_frequency" required>
+                <option></option>
                 <option value="weekly">Weekly</option>
                 <option value="monthly">Monthly</option>
                 <option value="bimonthly">Bi-monthly</option>
                 <option value="quarterly">Quarterly</option>
             </select>
-        </p>
+          </div>
            
-        <button class="submit">Submit</button>
+        <button type="submit" value="submit" class="submit">Submit</button>
         
-     </form>
+     </form><!--End Subscription Form-->
 
      
-    <!--main.js-->
-     <script src="main.js"></script>
-
     
+
+    <!--main.js-->
+    <script src="main.js"></script>
+
   </body>
 </html>

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
 
       <title>Bad Ash Bakes</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
   </head>
   
@@ -32,7 +34,7 @@
 
   <body>
 
-    <!--  CAROUSEL ATTEMPT-->
+    <!--  CAROUSEL -->
 
     <div class="slideshow-container">
 
@@ -68,8 +70,8 @@
     <!--Beginning of About container (Bootstrap Grid)-->
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <h2 class="sectionheader mt-4 text-center">About Bad Ash</h2>
+        <div class="col-md">
+          <h2 class="sectionheader mt-4 text-center" id="aboutbadash">About Bad Ash</h2>
 
           <img class="mt-4 mb-4 img-fluid rounded" src="img/ashley.jpeg" alt="image of owner in front of grafitti wall">
 
@@ -77,16 +79,17 @@
         <p>My baking career began when I got my first Easy Bake Oven. How can a 
           girl resist churning out cookies, cakes, brownies with the help of a 65 watt lightbulb? </p>
         <p>As I got older, baking became my favorite past time. While working in IT, I became an avid stress baker. When life is tough, the tough get baking!! 
-          Soon, I was making so may pastries that i began began to share my bakes with my friends and family. Everyone loved them and 
+          Soon, I was making so may pastries that I began began to share my bakes with my friends and family. Everyone loved them and 
           swore that I could make a living doing something that I loved. So decided to turn my passion into a business!</p>
         </div>
-        <div class="col-sm">
+        <div class="col-md">
 
-          <h2 class="sectionheader mt-4 text-center">Subscription Services</h2>
+          <h2 class="sectionheader mt-4 text-center" id="aboutservice">Subscription Services</h2>
 
           <img class="img-fluid rounded mt-4 mb-4" src="img/hands holding bread.jpeg" alt="image of hands holding bread">
 
-          <p class="mt-4">Bad Ash Bakes is Louisville's finest subscription box for baked goods! 
+          <p class="text-center">Want fresh baked goods delivered to your door?</p>
+          <p>Bad Ash Bakes is Louisville's finest subscription box for baked goods! 
           Pick the size and frequency you would like to recieve your baked goods and we will take care of the the rest!</p>
           <p>Baked good selections will change weekly. Have a dietary restriction? We can accomodate them!</p>
 
@@ -99,9 +102,9 @@
 <!-- Pricing Table-->  
 <div class="container align-middle">
   <div class="row">
-    <div class="col-md mt-4">
+    <div class="col-md mt-5">
       <table>
-        <h2 class="sectionheader">Sizing and Prices</h2>
+        <h2 class="sectionheader" id="pricing">Sizing and Prices</h2>
         <tr>
           <th>Size</th>
           <th class="tablepad">Size Description</th>
@@ -129,7 +132,7 @@
         </tr>
       </table>
     </div>
-    <div class="col-sm">
+    <div class="col-md mt-4">
       <img class="img-fluid rounded-circle" src="img/sprinkledonuts.jpeg" alt="picture of donuts with rainbow sprinkles">
     </div>
   </div>
@@ -138,47 +141,59 @@
  
 <!-- Subcription Form-->
 
-<form class="ser" onsubmit="myFunction()">
-    <h2 class="sectionheader">Subscribe!!</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md mt-4">
+      <form class="ser subscribe container-fluid" onsubmit="myFunction()">
+          <h2 class="sectionheader text-center" id="subscribe">Subscribe!!</h2>
 
-        <p>Want to get your own Bad Ash Bakes? Fill out the form below. We will get in touch to add you to our subscription 
-          services and discuss any dietary needs.</p>
-    
-         <div>
-            <label for="name">Name</label>
-            <input type="name" id="name" name="user_name" required>
-         </div>
+              <p class="px-2">Want to get your own Bad Ash Bakes? Fill out the form below. We will get in touch to add you to our subscription 
+                services and discuss any dietary needs.</p>
+              </div>
 
-         <div>
-            <label for="email">Email:</label>
-            <input type="email" id=mail name="user_email" required>
-         </div>
+              <div class="col-md mt-4 mb-4">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="name" id="name" name="user_name" required>
+                </div>
 
-        <div>
-            <label for="box">Box Size</label>
-            <select id="box" name="box_size" required>
-                <option></option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="Family">Family</option>  
-            </select>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id=mail name="user_email" required>
+                </div>
+
+                <div>
+                  <label for="box">Box Size</label>
+                  <select id="box" name="box_size" required>
+                      <option></option>
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                      <option value="Family">Family</option>  
+                  </select>
+                </div>
+
+                <div>
+                  <label for="frequency">Delivery Frequency</label>
+                  <select id="frequency" name="delivery_frequency" required>
+                      <option></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="bimonthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+                </div>
+                
+                <button type="submit" value="submit" class="submit">Submit</button>    
+          </form>
+          </div>  
           </div>
+        </div>
+      <!--End Subscription Form-->
 
-        <div>
-            <label for="frequency">Delivery Frequency</label>
-            <select id="frequency" name="delivery_frequency" required>
-                <option></option>
-                <option value="weekly">Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="bimonthly">Bi-monthly</option>
-                <option value="quarterly">Quarterly</option>
-            </select>
-          </div>
-           
-        <button type="submit" value="submit" class="submit">Submit</button>
-        
-     </form><!--End Subscription Form-->
+     <footer class="footer">
+      <a href="#top" class="footertext">Back To Top</a>
+     </footer>
 
      
     

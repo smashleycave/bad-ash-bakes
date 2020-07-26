@@ -112,6 +112,7 @@ h1{
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
+    width: 100%;
 }
 
 .footertext {
@@ -151,7 +152,7 @@ th{
     @media (min-width: 576px) { ... }
 
     /* Medium devices (tablets, 768px and up)*/
-    @media (min-width: 768px) { ... }
+    @media (min-width: 768px)  { ... }
 
     /*Large devices (desktops, 992px and up)*/
     @media (min-width: 992px) { ... }
@@ -161,7 +162,7 @@ th{
 
 
 
-/*  Media Queries For Navbar*/
+/* Media Queries For Navbar*/
     /* When the screen is less than 600 pixels wide, hide all links Except Bad Ash Bakes */
     @media screen and (max-width: 1000px) {
         .topnav a:not(:first-child) {display: none;}

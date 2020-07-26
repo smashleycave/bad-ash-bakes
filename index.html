@@ -100,9 +100,9 @@
 
 
 <!-- Pricing Table-->  
-<div class="container align-middle">
+<div class="container">
   <div class="row">
-    <div class="col-md mt-5">
+    <div class="col-md m-5 col">
       <table>
         <h2 class="sectionheader" id="pricing">Sizing and Prices</h2>
         <tr>
@@ -132,64 +132,63 @@
         </tr>
       </table>
     </div>
-    <div class="col-md mt-4">
-      <img class="img-fluid rounded-circle" src="img/sprinkledonuts.jpeg" alt="picture of donuts with rainbow sprinkles">
-    </div>
-  </div>
-</div>
 
- 
-<!-- Subcription Form-->
-
-<div class="container">
-  <div class="row">
-    <div class="col-md mt-4">
+    <!-- Subcription Form-->
+    <div class="col-md m-5">
       <form class="ser subscribe container-fluid" onsubmit="myFunction()">
-          <h2 class="sectionheader text-center" id="subscribe">Subscribe!!</h2>
+        <h2 class="sectionheader text-center sectionheader" id="subscribe">Subscribe!!</h2>
 
-              <p class="px-2">Want to get your own Bad Ash Bakes? Fill out the form below. We will get in touch to add you to our subscription 
-                services and discuss any dietary needs.</p>
+            <p class="px-2">Want to get your own Bad Ash Bakes? Fill out the form below. We will get in touch to add you to our subscription 
+              services and discuss any dietary needs.</p>
+  
+
+            <div class="col-md">
+              <div>
+                <label for="name">Name</label>
+                <input type="name" id="name" name="user_name" required>
               </div>
 
-              <div class="col-md mt-4 mb-4">
-                <div>
-                  <label for="name">Name</label>
-                  <input type="name" id="name" name="user_name" required>
-                </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id=mail name="user_email" required>
+              </div>
 
-                <div>
-                  <label for="email">Email:</label>
-                  <input type="email" id=mail name="user_email" required>
-                </div>
+              <div>
+                <label for="box">Box Size</label>
+                <select id="box" name="box_size" required>
+                    <option></option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="Family">Family</option>  
+                </select>
+              </div>
 
-                <div>
-                  <label for="box">Box Size</label>
-                  <select id="box" name="box_size" required>
-                      <option></option>
-                      <option value="small">Small</option>
-                      <option value="medium">Medium</option>
-                      <option value="large">Large</option>
-                      <option value="Family">Family</option>  
-                  </select>
-                </div>
+              <div>
+                <label for="frequency">Delivery Frequency</label>
+                <select id="frequency" name="delivery_frequency" required>
+                    <option></option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="bimonthly">Bi-monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                </select>
+              </div>
+              
+              <button type="submit" value="submit" class="submit">Submit</button>    
+        </form>
+    </div>
+  </div>
+</div>  <!--End Subscription Form-->
 
-                <div>
-                  <label for="frequency">Delivery Frequency</label>
-                  <select id="frequency" name="delivery_frequency" required>
-                      <option></option>
-                      <option value="weekly">Weekly</option>
-                      <option value="monthly">Monthly</option>
-                      <option value="bimonthly">Bi-monthly</option>
-                      <option value="quarterly">Quarterly</option>
-                  </select>
-                </div>
-                
-                <button type="submit" value="submit" class="submit">Submit</button>    
-          </form>
-          </div>  
-          </div>
-        </div>
-      <!--End Subscription Form-->
+<!--Image-->
+
+<div class="m-5 rounded">
+  <img class="img-fluid rounded-circle mx-auto d-block" src="img/sprinkledonuts.jpeg" alt="picture of donuts with rainbow sprinkles">
+</div>
+</div>
+
+<!--Footer-->
 
      <footer class="footer">
       <a href="#top" class="footertext">Back To Top</a>
